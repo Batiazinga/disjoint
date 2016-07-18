@@ -1,4 +1,4 @@
-package disjoint
+package disjointsets
 
 // Element is an element of a set.
 type Element struct {
