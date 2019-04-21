@@ -1,10 +1,10 @@
-package disjointsets
+package disjointset
 
 // Element is an element of a set.
 type Element struct {
 	parent *Element
 	rank   int
-	// The value stored with this element
+	// The value stored within this element
 	Value interface{}
 }
 

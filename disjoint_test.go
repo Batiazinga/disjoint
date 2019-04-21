@@ -1,4 +1,4 @@
-package disjointsets
+package disjointset
 
 import (
 	"fmt"
@@ -15,7 +15,10 @@ func Example() {
 	Union(a, b)
 
 	// a and b are in the same set, c is in another set
-	fmt.Printf("a and b are in the same set: %v\nc is in another set: %v\n", Find(a) == Find(b), Find(a) != Find(c))
+	fmt.Printf(
+		"a and b are in the same set: %v\nc is in another set: %v\n",
+		Find(a) == Find(b), Find(a) != Find(c),
+	)
 	// Output:
 	// a and b are in the same set: true
 	// c is in another set: true

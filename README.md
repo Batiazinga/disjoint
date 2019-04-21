@@ -1,4 +1,4 @@
-Package disjoint provides a disjoint-set forest data structure.
+Package disjointset provides a disjoint-set forest data structure.
 
 ## Installation
 
