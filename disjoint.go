@@ -8,8 +8,8 @@ type Element struct {
 	Value interface{}
 }
 
-// MakeSet creates a new set: singleton {x}
-func MakeSet(x interface{}) *Element {
+// New creates the singleton {x}.
+func New(x interface{}) *Element {
 	e := new(Element)
 	e.parent = e
 	e.rank = 0

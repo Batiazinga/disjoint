@@ -7,9 +7,9 @@ import (
 
 func Example() {
 	// build three singletons
-	a := MakeSet("a")
-	b := MakeSet("b")
-	c := MakeSet("c")
+	a := New("a")
+	b := New("b")
+	c := New("c")
 
 	// union a and b
 	Union(a, b)
@@ -26,9 +26,9 @@ func Example() {
 
 func TestDisjoint(t *testing.T) {
 	sets := make(map[int]*Element)
-	sets[0] = MakeSet(0)
-	sets[1] = MakeSet(1)
-	sets[2] = MakeSet(2)
+	sets[0] = New(0)
+	sets[1] = New(1)
+	sets[2] = New(2)
 
 	for i, elt := range sets {
 		if elt.parent != elt {
